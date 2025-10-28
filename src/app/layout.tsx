@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { ReactQueryProvider } from "@/providers/QueryProvider";
+import { Navbar } from "@/components/layout/Navbar";
 
 export const metadata: Metadata = {
   title: "Strawberry Front",
@@ -18,6 +19,7 @@ export default function RootLayout({
         className={`antialiased`}
       >
         <ReactQueryProvider>
+          <Navbar />
           {children}
         </ReactQueryProvider>
       </body>
