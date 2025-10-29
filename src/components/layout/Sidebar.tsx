@@ -11,7 +11,7 @@ export function Sidebar() {
   const links = [
     { href: "/dashboard", label: "Dashboard", icon: BarChart },
     { href: "/dashboard/production", label: "Produção", icon: Image },
-    { href: "/dashboard/reports", label: "Relatórios", icon: FileText },
+    { href: "/relatorios", label: "Relatórios", icon: FileText },
     { href: "/dashboard/settings", label: "Configurações", icon: Settings },
   ];
 

@@ -2,13 +2,13 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { BarChart3, FileText, Leaf } from "lucide-react";
+import { ProductivityChart } from "@/components/charts/ProductivityChart";
 
 export default function DashboardPage() {
   return (
     <div className="space-y-8">
       <h1 className="text-3xl font-semibold text-pink-700">Painel de Produção 🍓</h1>
 
-      {/* Cards de resumo */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <Card className="shadow-sm">
           <CardHeader className="flex flex-row items-center justify-between">
@@ -42,6 +42,7 @@ export default function DashboardPage() {
             <p className="text-xs text-gray-500">Arquivo: prod_2025Q3.pdf</p>
           </CardContent>
         </Card>
+        <ProductivityChart />
       </div>
     </div>
   );
